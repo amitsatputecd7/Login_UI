@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="address_text">20sp</dimen>
+    <dimen name="headings">25sp</dimen>
+    <dimen name="devider1">20dp</dimen>
+    <dimen name="devider2">10dp</dimen>
+    <dimen name="devider_flips">8dp</dimen>
+
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="little_line">10sp</dimen>
+
+
+</resources>

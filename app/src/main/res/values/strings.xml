@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">E-FM</string>
+    <!--    Owner profile page info-->
+    <string name="rest_address"> plot no. 41 nagpur pincode 440009 </string>
+    <string name="todayPics">Today\'s Pictures</string>
+    <!--   / Owner profile page info-->
+    <!--    login ui -->
+    <string name="we_pursue">We pursue a delicious reading experience</string>
+
+
+</resources>

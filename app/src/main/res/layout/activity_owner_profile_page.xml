@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".OwnerProfilePage">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+    </FrameLayout>
+<Button
+    android:id="@+id/button_back"
+    android:layout_width="80dp"
+    android:layout_height="30dp"
+    android:background="#346EFF"
+    android:layout_marginTop="15dp"
+    android:text="Back"
+    android:textSize="20sp"
+    />
+    <Button
+        android:id="@+id/button_Stats"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="#346EFF"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:text="Stats"
+        android:textSize="20sp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       >
+
+
+
+
+
+       <!--first column-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/iv_restImage"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_marginTop="@dimen/devider2"
+               android:layout_gravity="center"
+               />
+           <TextView
+               android:id="@+id/tv_restAddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textColor="#ffffff"
+               android:layout_marginTop="@dimen/devider2"
+               android:text="@string/rest_address"
+               android:textSize="@dimen/address_text"
+               />
+
+           <TextView
+               android:id="@+id/tv_todayPics"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginTop="@dimen/devider1"
+               android:text="@string/todayPics"
+               android:textColor="#ffffff"
+               android:textSize="@dimen/headings"
+               />
+
+<!--flipper line 1-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/little_line"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Entrance"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Cashier Desk"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/devider_flips">
+
+               <ViewFlipper
+                   android:id="@+id/flipper11"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+
+               <ViewFlipper
+                   android:id="@+id/flipper12"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+           </LinearLayout>
+
+           <!--flipper line 2-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/little_line"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Dining Area"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Chef"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/devider_flips">
+
+               <ViewFlipper
+                   android:id="@+id/flipper21"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+
+               <ViewFlipper
+                   android:id="@+id/flipper22"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+           </LinearLayout>
+           <!--flipper line 3-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/little_line"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Kitchen"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Delivery Boy"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/devider_flips"
+               >
+
+               <ViewFlipper
+                   android:id="@+id/flipper31"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+
+               <ViewFlipper
+                   android:id="@+id/flipper32"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+           </LinearLayout>
+           <!--flipper line 4-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/little_line"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Staff"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Washing Area"
+                   android:textColor="#9affffff"
+                   android:textSize="20sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginTop="@dimen/devider_flips"
+               >
+
+               <ViewFlipper
+                   android:id="@+id/flipper41"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+
+               <ViewFlipper
+                   android:id="@+id/flipper42"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+           </LinearLayout>
+
+
+       </LinearLayout>
+       <!--end first column-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--second column-->
+<!--       <LinearLayout-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="match_parent"-->
+<!--           android:orientation="vertical"-->
+<!--           android:layout_weight="1"-->
+<!--           android:background="#F39A9A"-->
+<!--           >-->
+
+<!--       </LinearLayout>-->
+       <!--end second column-->
+   </LinearLayout>
+
+
+
+    </LinearLayout></ScrollView>
+</RelativeLayout>
